@@ -32,7 +32,8 @@
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli lib",
     "prepare": "bob build",
-    "release": "release-it"
+    "release": "release-it",
+    "prepack": "bob build"
   },
   "keywords": [
     "react-native",
@@ -67,6 +68,8 @@
     "react": "18.2.0",
     "react-native": "0.72.6",
     "react-native-builder-bob": "^0.20.0",
+    "react-native-reanimated": "3.5.4",
+    "react-native-vision-camera": "^2.16.1",
     "release-it": "^15.0.0",
     "typescript": "^5.0.2"
   },
@@ -75,14 +78,16 @@
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-reanimated": ">=2.1.0",
+    "react-native-vision-camera": ">=2.0.0"
   },
   "workspaces": [
     "example"
   ],
   "packageManager": "yarn@3.6.1",
   "engines": {
-    "node": ">= 18.0.0"
+    "node": ">= 16.0.0"
   },
   "jest": {
     "preset": "react-native",
