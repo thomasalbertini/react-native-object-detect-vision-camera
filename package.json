@@ -1,6 +1,7 @@
 {
   "name": "react-native-object-detect-vision-camera",
   "version": "0.1.0",
+  "private": "true",
   "description": "Plugin",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
